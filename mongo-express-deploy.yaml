@@ -31,5 +31,8 @@ spec:
                 name: mongodb-secret
                 key: MONGO_INITDB_ROOT_PASSWORD
           - name: ME_CONFIG_MONGODB_SERVER        
-            value: 
+            valueFrom:
+              configMapKeyRef:
+                name: mongo-configmap
+                key: database_url
           
