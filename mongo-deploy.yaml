@@ -24,12 +24,12 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: mongodb-secret
-                  key: MONGO_INITDB_ROOT_USERNAME 
+                  key: mongo-root-username
             - name: MONGO_INITDB_ROOT_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: mongodb-secret
-                  key: MONGO_INITDB_ROOT_PASSWORD
+                  key: mongo-root-password
 
 
 
@@ -42,10 +42,9 @@ spec:
   selector:
     app: mongodb
   ports:
-    - port: 27017
+    - protocol: TCP
+      port: 27017
       targetPort: 27017
-
-
 ---
 
 

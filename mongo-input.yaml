@@ -4,5 +4,5 @@ metadata:
   name: mongodb-secret
 type: Opaque
 data:
-  MONGO_INITDB_ROOT_USERNAME: YW1hcnppbHBl 
-  MONGO_INITDB_ROOT_PASSWORD: cmVkaGF0MTIz
+   mongo-root-username: YW1hcnppbHBl 
+   mongo-root-password: cmVkaGF0MTIz
