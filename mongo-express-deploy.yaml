@@ -6,7 +6,7 @@ metadata:
     apps: mongo-express
 spec:
   replicas: 2
-  selectors:
+  selector:
     matchLabels:
       app: mongo-express
   template:
