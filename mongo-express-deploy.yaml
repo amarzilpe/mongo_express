@@ -18,7 +18,7 @@ spec:
         - name: mongo-express-container
           image: mongo-express
           ports:
-          - containerPort: 8081
+          - 8081:8081
           env:
           - name: MONGO_INITDB_ROOT_USERNAME
             valueFrom:
